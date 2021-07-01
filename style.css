@@ -1,27 +1,46 @@
 /* 画面のスタイルシート */
 body{
     font-family: "Noto Sans Ja","sans-serif";
+    background-color:rgb(240, 240, 236);
+    border-top: 10px solid rgb(0, 204, 255);
     margin: 0;
-    min-width: 1076px;
-    background-color:rgb(240, 240, 236)
 }
 
 /* [header]のスタイルシート */
 
-/* 一番上の線 */
-.header-0 span{
-    background-color: rgb(0, 204, 255);
-    width: 100%;
-    height:10px;
-    position: absolute;
-    top:0;
+header{
+    margin: 0 auto;
+    width: 1076px;
 }
 
 /* ぐーぺ保育園 */
-header{
-    display: block;
+
+.block-logo{
+    padding: 60px 0;
+}
+.block-logo h1{
+    margin: 0;
+}
+.block-logo p{
+    margin: 0;
 }
 
+
+/* 電話 */
+
+.block-tel{
+    float: right;
+    display: flex;
+    position: relative;
+    bottom: 180px;
+}
+.block-tel img{
+    height: 20px;
+    filter: invert(88%) sepia(100%) saturate(2929%) hue-rotate(104deg) brightness(99%) contrast(104%);
+}
+.block-tel p{
+    margin: 0 0 0 8px;
+}
 .header-1{
    margin: 100px 0 0 200px;
 }
@@ -29,290 +48,231 @@ header{
     margin-top: 8px;
 }
 
-/* 電話 */
-
-.header-2{
-    float: right;
-    position: absolute;
-    top: 10px;
-    left: 1200px;
-}
-.header-2 img{
-    height:20px;
-    filter: invert(88%) sepia(100%) saturate(2929%) hue-rotate(104deg) brightness(99%) contrast(104%);
-    padding-right: 5px;
-}
-.header-2 p{
-    display: inline-block;
-}
-
 /* [main]のスタイルシート */
 
-.main-1{
-    border: 1px solid rgb(0, 204, 255);
-    margin: 100px 0 0 200px;
+.main{
+    width: 1076px;
+    margin:0 auto;
+    
+}
+.block-main{
+    width: 1076px;
+    display: flex;
+    justify-content: center;
+}
+
+/* サイドバー */
+
+.block-sidebar{
     width: 250px;
-    background-color: #fff;
+    margin-right: 50px;
+}
+
+/* サイドバー「リスト」 */
+
+.block-list{
+    list-style: none;
+    border: 1px solid rgb(0, 204, 255);
     border-radius: 8px;
+    background-color: #fff;
+    padding: 0 30px;
+    margin-top: 0;
 }
 
-/* トップページ */
-
-.main-1 .list-1 a{
-    text-decoration: none;
-    color: #000;
-}
-.main-1 .list-1{
-    padding: 20px 0 25px 0;
-    list-style: none;
-    position: relative;
-}
-.main-1 .list-1::after{
+.block-list li{
     border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 200px;
-    position: absolute;
-    bottom: 3px;
-    left: -15px;
+    padding: 20px 0 20px 0;
 }
-.main-1 .list-1:before {
-    content: "";
-    position: absolute;
-    bottom: 34px;
-    left: -17px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 5px;
-    height: 5px;
-    border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
-    
-  }
+/* toppage トップページ*/
 
-/* お知らせ */
-
-.main-1 .list-2 a{
-    text-decoration: none;
+.block-list .toppage a{
     color: #000;
+    text-decoration: none;
 }
-.main-1 .list-2{
-    padding: 20px 0 25px 0;
-    list-style: none;
+.block-list .toppage{
     position: relative;
 }
-.main-1 .list-2::after{
-    border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 200px;
-    position: absolute;
-    bottom: 3px;
-    left: -15px;
-}
-.main-1 .list-2:before {
+.block-list .toppage::after {
     content: "";
     position: absolute;
-    bottom: 34px;
-    left: -17px;
+    bottom: 29px;
+    left: -16px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
     border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
-    
-  }
-
-/* 保育園について */
-
-.main-1 .list-3 a{
-    text-decoration: none;
-    color: #000;
+    border-right: 2px solid #f09b4b; 
 }
-.main-1 .list-3{
-    padding: 20px 0 25px 0;
-    list-style: none;
+
+/* info お知らせ*/
+
+.block-list .info a{
+    color: #000;
+    text-decoration: none;
+}
+.block-list .info{
     position: relative;
 }
-.main-1 .list-3::after{
-    border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 200px;
-    position: absolute;
-    bottom: 3px;
-    left: -15px;
-}
-.main-1 .list-3:before {
+.block-list .info:before {
     content: "";
     position: absolute;
-    bottom: 34px;
-    left: -17px;
+    bottom: 29px;
+    left: -16px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
     border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
-    
-  }
-
-/* 施設概要 */
-
-.main-1 .list-4 a{
-    text-decoration: none;
-    color: #000;
+    border-right: 2px solid #f09b4b;  
 }
-.main-1 .list-4{
-    padding: 20px 0 25px 0;
-    list-style: none;
+
+/* about 保育園について*/
+
+.block-list .about a{
+    color: #000;
+    text-decoration: none;
+}
+.block-list .about{
     position: relative;
 }
-.main-1 .list-4::after{
-    border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 200px;
-    position: absolute;
-    bottom: 3px;
-    left: -15px;
-}
-.main-1 .list-4:before {
+.block-list .about:before {
     content: "";
     position: absolute;
-    bottom: 34px;
-    left: -17px;
+    bottom: 29px;
+    left: -16px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
     border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
-    
-  }
-
-/* 園内の様子 */
-
-.main-1 .list-5 a{
-    text-decoration: none;
-    color: #000;
+    border-right: 2px solid #f09b4b;  
 }
-.main-1 .list-5{
-    padding: 20px 0 25px 0;
-    list-style: none;
+
+/* overview 施設概要*/
+
+.block-list .overview a{
+    color: #000;
+    text-decoration: none;
+}
+.block-list .overview{
     position: relative;
 }
-.main-1 .list-5::after{
-    border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 200px;
-    position: absolute;
-    bottom: 3px;
-    left: -15px;
-}
-.main-1 .list-5:before {
+.block-list .overview:before {
     content: "";
     position: absolute;
-    bottom: 34px;
-    left: -17px;
+    bottom: 29px;
+    left: -16px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
     border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
-    
-  }
-
-/* 年間の予定 */
-
-.main-1 .list-6 a{
-    text-decoration: none;
-    color: #000;
+    border-right: 2px solid #f09b4b;  
 }
-.main-1 .list-6{
-    padding: 20px 0 25px 0;
-    list-style: none;
+
+/* state 園内の様子*/
+
+.block-list .state a{
+    color: #000;
+    text-decoration: none;
+}
+.block-list .state{
     position: relative;
 }
-.main-1 .list-6::after{
-    border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 200px;
-    position: absolute;
-    bottom: 3px;
-    left: -15px;
-}
-.main-1 .list-6:before {
+.block-list .state:before {
     content: "";
     position: absolute;
-    bottom: 34px;
-    left: -17px;
+    bottom: 29px;
+    left: -16px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
     border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
-    
-  }
-
-/* お問い合わせ */
-
-.main-1 .list-7 a{
-    text-decoration: none;
-    color: #000;
+    border-right: 2px solid #f09b4b;  
 }
-.main-1 .list-7{
-    padding: 20px 0 25px 0;
-    list-style: none;
+
+/* schedule スケジュール*/
+
+.block-list .schedule a{
+    color: #000;
+    text-decoration: none;
+}
+.block-list .schedule{
     position: relative;
 }
-.main-1 .list-7:before {
+.block-list .schedule:before {
     content: "";
     position: absolute;
-    bottom: 34px;
-    left: -17px;
+    bottom: 29px;
+    left: -16px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
     border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
-    
+    border-right: 2px solid #f09b4b;  
+}
+
+/* inquiry お問い合わせ*/
+
+.block-list .inquiry a{
+    color: #000;
+    text-decoration: none;
+}
+.block-list .inquiry{
+    position: relative;
+}
+.block-list .inquiry:before {
+    content: "";
+    position: absolute;
+    bottom: 29px;
+    left: -16px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #f09b4b;
+    border-right: 2px solid #f09b4b;  
+}
+.block-list li:last-child{
+    border: none;
 }
 
 /* スケジュール */
 
-.main-2 .list-1 ul li{
-    list-style: none;
+.block-schedule p{
+    padding: 0 30px;
 }
-.main-2 .list-1{
+.block-schedule{
     border: 1px dotted rgb(0, 204, 255);
-    margin: 100px 0 0 200px;
     width: 250px;
     height: 110px;
+    margin-bottom: 16px;
     background-color: #fff;
     border-radius: 8px;
-    margin-top: 20px;
     position: relative;
 }
-.main-2 .list-1::after{
+.block-schedule::after{
     border-bottom: 1px dotted rgb(0, 204, 255);
     content: "";
     width: 200px;
     position: absolute;
     left: 23px;
 }
-.main-2 .list-1:before {
+.block-schedule:before {
     content: "";
     position: absolute;
     top: 23px;
-    left: 22px;
+    left: 16px;
     width: 10px;
     height: 10px;
     background-color: rgb(0, 204, 255);;
@@ -321,374 +281,332 @@ header{
 
 /* カウンター */
 
-.main-3 .list-1 ul li{
-    list-style: none;
+.block-counter .counter{
+    padding: 22px 30px;
 }
-.main-3 .list-1{
+.block-counter{
     border: 1px dotted rgb(0, 204, 255);
-    margin: 20px 0 0 200px;
     width: 250px;
     height: 170px;
     background-color: #fff;
     border-radius: 8px;
     position: relative;
 }
-
-.main-3 .list-1 ul li::after{
-    border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 200px;
-    position: absolute;
-    left: 23px;
-    bottom: 113px;
-}
-
-.main-3 .list-1:before {
+.block-counter:before {
     content: "";
     position: absolute;
-    top: 23px;
-    left: 22px;
+    top: 30px;
+    left: 16px;
     width: 10px;
     height: 10px;
     background-color: rgb(0, 204, 255);
     border-radius: 50%;
 }
-
-.main-3 .list-2 p{
-    margin: 40px 0 0 20px;
+.block-counter .counter .text{
+    border-bottom: 1px dotted rgb(0, 204, 255);
+    margin: 0;
+    padding-bottom: 15px;
+}
+.block-counter .counter .contents{
+    font-weight: normal;
 }
 
-/* 保育園の画像 */
+/* メインコンテンツ */
 
-.main-5 .list-1 img{
-    float: left;
-    height: 500px;
-    margin-left: 502px;
-    margin-top: -841px;
-    width: 850px;
-    border-radius: 8px;
+.block-mainContents{
+    width: 100%;
+}
+.block-mainContents .block-mainImg img{
+    width: 100%;
+}
+.block-mainContents .block-mainImg{
+    width: 100%;
     position: relative;
+    margin-bottom: 80px;
 }
-.main-5 .list-1::after{
+.block-mainContents .block-mainImg::after{
     border-bottom: 15px dotted #f09b4b;
     content: "";
-    width: 60px;
+    width: 70px;
+    display: block;
     position: absolute;
-    bottom: -170px;
-    left: 856px;
+    bottom: -40px;
+    left: 315px;
 }
 
 /* ごあいさつ */
 
-.main-6 {
+.block-greetings{
+    padding: 20px;
     border: 1px dotted rgb(0, 204, 255);
-    background-color: #fff;
     border-radius: 8px;
-    width: 850px;
-    height: 150px;
-    position: absolute;
-    top: 890px;
-    left: 502px;
+    background-color: #fff;
+    margin-bottom:30px;
 }
-.main-6 .list-1 span{
-    display: block;
-    margin: 30px 0 0 40px;
+.block-greetings .greetings{
+    border-bottom: 1px dotted rgb(0, 204, 255);
+    margin: 5px 0;
+    padding-bottom: 15px;
+    padding-left: 15px;
     position: relative;
 }
-.main-6 .list-1 span::after{
-    border-bottom: 38px solid rgb(0, 204, 255);
+.block-greetings .greetings::after{
+    border-bottom: 35px solid rgb(0, 204, 255);
+    width: 4px;
     content: "";
-    width: 5px;
     position: absolute;
-    top: -7px;
-    left: -20px;
+    left: 0;
+    top: -5px;
 }
-.main-6 .list-1 span::before{
-    border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 800px;
-    position: absolute;
-    top: 45px;
-    left: -20px;
+.block-greetings .text{
+    font-weight: unset;
+    margin: 26px 0 6px 0;
 }
-.main-6 .list-1 p{
-    display: block;
-    margin: 44px 0 0 22px;
+.block-info .event span{
+    color: rgb(0, 204, 255);
+    margin-right: 15px;
 }
 
 /* おしらせ */
 
-.main-7 {
+.block-info{
+    padding: 20px;
     border: 1px dotted rgb(0, 204, 255);
-    background-color: #fff;
     border-radius: 8px;
-    width: 850px;
-    height: 150px;
-    position: absolute;
-    top: 1070px;
-    left: 502px;
+    background-color: #fff;
 }
-.main-7 .list-1 p{
-    display: block;
-    margin: 30px 0 0 40px;
+.block-info .info{
+    border-bottom: 1px dotted rgb(0, 204, 255);
+    margin: 5px 0;
+    padding-bottom: 15px;
+    padding-left: 15px;
     position: relative;
 }
-.main-7 .list-1 p::after{
-    border-bottom: 38px solid rgb(0, 204, 255);
+.block-info .info::after{
+    border-bottom: 35px solid rgb(0, 204, 255);
+    width: 4px;
     content: "";
-    width: 5px;
     position: absolute;
-    top: -7px;
-    left: -20px;
+    left: 0;
+    top: -5px;
 }
-.main-7 .list-1 p::before{
-    border-bottom: 1px dotted rgb(0, 204, 255);
-    content: "";
-    width: 800px;
-    position: absolute;
-    top: 45px;
-    left: -20px;
-}
-.main-7 .list-1 .box-1{
-    margin: 47px 0 0 22px;
-}
-.main-7 .list-1 .box-1 span{
-    color: rgb(0, 204, 255);
-    margin-right: 13px;
-}
-.main-7 .list-1 .box-1 a{
-    text-decoration: none;
-    color: #000;
+.block-info .event{
+    font-weight: unset;
+    margin: 26px 0 6px 0;
 }
 
 /* [footer]のスタイルシート */
 
-footer{
+.block-footer{
+    margin-top: 50px;
     background-color: rgb(0, 204, 255);
-    margin-top: 200px;
     text-align: center;
 }
 
-/* ぐーぺ保育園の画像 */
+/* 保育園のロゴ */
 
-.footer-1 img{
-    margin: 30px 0 30px 0;
+.footer-logo{
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
-/* リスト */
+/* フッター リスト */
 
-.footer-2{
-    display: inline-block;
-}
-
-/* トップページ */
-
-.footer-2 .list-1{
+.footer-list ul{
     list-style: none;
-    float: left;
-    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
-.footer-2 .list-1 a{
+
+/* フッター toppage トップページ */
+
+.footer-list .toppage a{
     color: #fff;
     text-decoration: none;
+}
+.footer-list .toppage{
     position: relative;
 }
-.footer-2 .list-1 a::before {
+.footer-list .toppage::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: -17px;
+    bottom: 9px;
+    left: -14px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
-    border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
+    border-top: 3px solid #f09b4b;
+    border-right: 3px solid #f09b4b; 
 }
 
-/* お知らせ */
+/* フッター info おしらせ */
 
-.footer-2 .list-2{
-    list-style: none;
-    float: left;
-    margin-right: 30px;
-}
-.footer-2 .list-2 a{
+.footer-list .info a{
     color: #fff;
     text-decoration: none;
+}
+.footer-list .info{
+    margin-left: 30px;
     position: relative;
 }
-.footer-2 .list-2 a::before {
+.footer-list .info::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: -17px;
+    bottom: 9px;
+    left: -14px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
-    border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
+    border-top: 3px solid #f09b4b;
+    border-right: 3px solid #f09b4b; 
 }
 
-  /* 保育園について */
+/* フッター about 保育園について */
 
-.footer-2 .list-3{
-    list-style: none;
-    float: left;
-    margin-right: 30px;
-}
-.footer-2 .list-3 a{
-    color: #fff;
+.footer-list .about a{
+    color: #ffff;
     text-decoration: none;
+}
+.footer-list .about{
+    margin-left: 30px;
     position: relative;
 }
-.footer-2 .list-3 a::before {
+.footer-list .about::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: -17px;
+    bottom: 9px;
+    left: -14px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
-    border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
+    border-top: 3px solid #f09b4b;
+    border-right: 3px solid #f09b4b; 
 }
 
-  /* 施設概要 */
+/* フッター overview 施設概要 */
 
-.footer-2 .list-4{
-    list-style: none;
-    float: left;
-    margin-right: 30px;
-}
-.footer-2 .list-4 a{
+.footer-list .overview a{
     color: #fff;
     text-decoration: none;
+}
+.footer-list .overview{
+    margin-left: 30px;
     position: relative;
 }
-.footer-2 .list-4 a::before {
+.footer-list .overview::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: -17px;
+    bottom: 9px;
+    left: -14px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
-    border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
+    border-top: 3px solid #f09b4b;
+    border-right: 3px solid #f09b4b; 
 }
+/* フッター state 園内の様子 */
 
-  /* 園内の様子 */
-
-.footer-2 .list-5{
-    list-style: none;
-    float: left;
-    margin-right: 30px;
-}
-.footer-2 .list-5 a{
+.footer-list .state a{
     color: #fff;
     text-decoration: none;
+}
+.footer-list .state{
+    margin-left: 30px;
     position: relative;
 }
-.footer-2 .list-5 a::before {
+.footer-list .state::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: -17px;
+    bottom: 9px;
+    left: -14px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
-    border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
+    border-top: 3px solid #f09b4b;
+    border-right: 3px solid #f09b4b; 
 }
 
-  /* 年間の予定 */
+/* フッター schedule スケジュール */
 
-  .footer-2 .list-6{
-    list-style: none;
-    float: left;
-    margin-right: 30px;
-}
-.footer-2 .list-6 a{
+.footer-list .schedule a{
     color: #fff;
     text-decoration: none;
+}
+.footer-list .schedule{
+    margin-left: 30px;
     position: relative;
 }
-.footer-2 .list-6 a::before {
+.footer-list .schedule::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: -17px;
+    bottom: 9px;
+    left: -14px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
-    border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
+    border-top: 3px solid #f09b4b;
+    border-right: 3px solid #f09b4b; 
 }
 
-  /* お問い合わせ */
+/* フッター inquiry お問い合わせ */
 
-  .footer-2 .list-7{
-    list-style: none;
-    float: left;
-    margin-right: 30px;
-}
-.footer-2 .list-7 a{
+.footer-list .inquiry a{
     color: #fff;
     text-decoration: none;
+}
+.footer-list .inquiry{
+    margin-left: 30px;
     position: relative;
 }
-.footer-2 .list-7 a::before {
+.footer-list .inquiry::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: -17px;
+    bottom: 9px;
+    left: -14px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
-    border-top: 2px solid #f09b4b;
-    border-right: 2px solid #f09b4b;
+    border-top: 3px solid #f09b4b;
+    border-right: 3px solid #f09b4b; 
 }
 
-  /* 矢印の画像 */
+/* footer-toppageの画像 */
 
-.footer-3 img{
-    height: 35px;
-    border-radius: 18px;
+.footer-toppage img{
+    height: 40px;
+    float: right;
+    position: relative;
+    bottom: 45px;
+    right: 100px;
     filter: invert(72%) sepia(26%) saturate(6428%) hue-rotate(1deg) brightness(105%) contrast(102%);
-    position: relative;
-    left: 650px;
-    bottom: 30px;
 }
-  /* footer */
 
-  .footer-4 p{
-      color: #fff;
-      margin: 0;
-  }
-  .footer-4 p a{
-      color: #fff;
-      text-decoration: none;
-  }
-  .footer-4 img{
-      margin-left: 5px;
-      height: 10px;
-      filter: invert(88%) sepia(100%) saturate(2929%) hue-rotate(104deg) brightness(99%) contrast(104%);
-      color: rgb(0, 204, 255);
-      background-color: #fff;
-      border-radius: 2px;
-      padding: 2px;
-  }
+/* footer-text */
+
+.footer-text{
+    margin: 0;
+    padding: 20px 0 15px 0;
+    color: #fff;
+}
+.footer-text a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-text  p img{
+    height: 15px;
+}
